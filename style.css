@@ -1,0 +1,476 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+}
+
+h2,
+h3 {
+  text-transform: capitalize;
+}
+
+p {
+  color: lightgray;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+span {
+  font-weight: 300;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HEADER */
+.page-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: .5s;
+  z-index: 1;
+}
+
+.has-bg {
+  background: rgba(154, 249, 142, 0.661);
+}
+
+/* BIG BANNER */
+.hero {
+  background: url(assets/headshot.jpg) rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.header-menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.textbox {
+  max-width: 260px;
+  text-align: center;
+}
+
+.textbox h1 {
+  font-size: 42px;
+  font-weight: 200;
+  color: white;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.textbox span {
+  font-weight: 700;
+}
+
+.textbox p {
+  font-size: 14px;
+  color: lightgray;
+  text-transform: uppercase;
+}
+
+/* PORTFOLIO SECTION */
+.portfolio-header {
+  text-align: center;
+}
+
+.portfolio-flex .card h4 {
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.portfolio-flex .card p {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.portfolio-flex .card-image1,
+.card-image2,
+.card-image3 {
+  margin-bottom: 10px;
+}
+
+.portfolio .card .grey-box {
+  background: rgba(0, 0, 0, 60%);
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  width: 100%;
+  height: 45%;
+  opacity: 0%;
+  transition: .5s;
+}
+
+.portfolio .card:hover .grey-box {
+  opacity: 100%;
+  height: 75%;
+}
+
+.youtube-link:hover {
+  color: blue;
+}
+
+.portfolio-flex .card-info h4 {
+  margin-bottom: 5px;
+}
+
+.portfolio a {
+  color: lightgray;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.portfolio-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.portfolio-flex .card {
+  text-align: center;
+  width: calc((100% - 30px) / 3);
+}
+
+.portfolio-flex .card-image {
+  height: 200px;
+  background-color: lightblue;
+}
+
+/* RESUME SECTION */
+.resume-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.resume-header {
+  text-align: center;
+}
+
+.resume-flex-header {
+  width: calc((200% - 30px) / 2);
+  display: flex;
+  gap: 40px;
+}
+
+.resume-flex-header .education,
+.resume-flex-header .experience {
+  width: 50%;
+  text-transform: capitalize;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+
+.resume-header h2 {
+  text-transform: capitalize;
+}
+
+.resume-flex .card {
+  width: calc((100% - 30px) / 2);
+  border-radius: 5px;
+}
+
+.portfolio-header h2 {
+  padding-bottom: 30px;
+}
+
+.portfolio-header ul {
+  padding-bottom: 20px;
+}
+
+.card-image1 {
+  background: url(https://cdn.mos.cms.futurecdn.net/PjXv2sGydWRip8XDSK82nJ.jpg);
+}
+
+.card-image2 {
+  background: url(https://townsquare.media/site/366/files/2018/10/CalJam18-TenaciousD-10062018-KathyFlynn-4372.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89);
+}
+
+.card-image3 {
+  background: url(https://cdn.entertainment-focus.com/wp-content/uploads/2019/01/static1.squarespace.com_.jpg);
+}
+
+.card-image1,
+.card-image2,
+.card-image3 {
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  min-width: 200px;
+}
+
+.resume-header h2 {
+  padding-bottom: 40px;
+}
+
+.portfolio-header ul {
+  padding-bottom: 20px;
+}
+
+.resume-flex .card {
+  background-color: rgb(60, 60, 60);
+  padding: 20px;
+}
+
+.resume-flex .card .date {
+  color: white;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume-flex .card .title {
+  color: olive;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.resume-flex .card .description {
+  color: rgb(130, 130, 130);
+  margin-bottom: 10px;
+}
+
+.resume-flex .card .source {
+  color: rgb(130, 130, 130);
+  text-transform: capitalize;
+}
+
+/* ABOUT ME SECTION */
+.about-flex {
+  display: flex;
+  align-items: center;
+}
+
+.about-flex .left {
+  width: 55%;
+  height: 400px;
+  background: url(assets/headshot.jpg);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-info {
+  align-items: center;
+}
+
+.about-flex .right {
+  width: 45%;
+  padding-left: 70px;
+  align-items: center;
+}
+
+.about .right h2 {
+  margin-bottom: 30px;
+}
+
+.about .right p {
+  margin-bottom: 30px;
+  max-width: 350px;
+  color: rgb(130, 130, 130);
+}
+
+.btn-hire {
+  background-color: lightgreen;
+  padding: 10px 25px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.btn-hire:hover {
+  background-color: rgb(196, 253, 196);
+  color: black;
+}
+
+.btn-download {
+  background-color: lightgray;
+  padding: 10px 25px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+}
+
+.btn-download:hover {
+  background-color: rgb(105, 105, 105);
+  color: black;
+}
+
+/* CONTACT SECTION */
+.contact-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-flex h2 {
+  margin-bottom: 50px;
+}
+
+.contact-flex h3 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 200;
+}
+
+.contact-flex h5 {
+  text-transform: uppercase;
+  color: rgb(74, 74, 111);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.contact-flex p {
+  color: rgb(130, 130, 130);
+  margin-bottom: 10px;
+}
+
+.contact-flex .uppercase {
+  text-transform: uppercase;
+}
+
+.contact-flex .capitalize {
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 992px) {
+  section {
+    padding: 60px 0;
+  }
+
+  .about-btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-hire {
+    margin-bottom: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .portfolio-flex,
+  .about-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .resume-flex-header {
+    align-items: center;
+  }
+
+  .resume-flex .card {
+    width: calc((100%) / 1);
+    /* to review*/
+    text-align: center;
+  }
+
+  .resume-flex .card1,
+  .card3 {
+    order: 1;
+  }
+
+  .resume-flex .card2,
+  .card4 {
+    order: 2;
+  }
+
+  .about .left {
+    margin-bottom: 20px;
+  }
+
+  .about-info {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about-btn {
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-flex .left,
+  .about-flex .right {
+    width: 100%;
+  }
+
+  .about-flex .right {
+    padding-left: 0;
+  }
+
+
+  .about .right h2 {
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-flex h2,
+  h3 {
+    margin-bottom: 20px;
+  }
+}
